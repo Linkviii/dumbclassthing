@@ -1,0 +1,13 @@
+LAME
+lame is a lame way to compare and cat strings in an object oriented way. Every program is 1 line. If there is code other than `^` then the program extends the base class.
+A program has two parts. The var comes before `$`. Strings deleminated by spaces are concatenated. If no var is defined then "hello" is inherited from the base class".
+After the var is the function. Spaces are ignored. `%` is replaced with the value of var. if `@` is present then the values on either side are compared. If no function is defined then the behaviour of printing just var is inherited.
+`^` marks the end of the program. anything after is a comment.
+lame.py is a python interpreter that reads a program from std in.
+
+'baseclass.lame' implements the base class in lame.
+
+<prg> = var $ fun ^
+<var> = str*
+<thing> = str | %
+<fun> = thing @ thing | thing
